@@ -1,0 +1,648 @@
+.landingpage {
+  float: right;
+  width: 100vw;
+  height: max-content;
+  background-color: #E6E7E8;
+}
+
+/* Style Sidebar Component */
+.sidebar-container {
+  position: fixed;
+  box-sizing: border-box;
+  left: 0;
+  height: 100vh;
+  background: #ffffff;
+  width: 25vw;
+  border-radius: 0 90px 90px 0;
+}
+
+.logo img {
+  width: 60%;
+  padding: 20px;
+}
+
+.bullet {
+  margin-left: -50px;
+  margin-top: 10px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(to right, #E7E035, #03AC0E);
+  margin-right: 20px;
+}
+
+.list {
+  display: flex;
+
+
+  li:hover {
+    a {
+      background: linear-gradient(to right, #E7E035, #03AC0E);
+      border-radius: 50px;
+    }
+  }
+}
+
+.nav ul {
+  list-style: none;
+  margin: auto;
+  margin-top: 30px;
+
+
+  li {
+
+    a {
+      text-align: center;
+      padding: 10px;
+      margin: auto;
+      font-weight: bold;
+      margin-bottom: 80px;
+      text-decoration: none;
+      letter-spacing: 0.4em;
+      color: rgb(0, 0, 0);
+      display: block;
+      transition: all ease-out 300ms;
+    }
+  }
+}
+
+// Style Navbar
+.navbar-container {
+  margin-top: 20px;
+  color: #03AC0E;
+  margin-left: 55vw;
+  float: right;
+  padding: 0 20px;
+  position: fixed;
+  box-sizing: border-box;
+  z-index: 99;
+
+  nav {
+    display: flex;
+  }
+
+  .link-cart {
+    margin-top: 2px;
+    margin-right: 40px;
+    cursor: pointer;
+  }
+
+  .login {
+    padding: 5px 20px;
+    margin-right: 20px;
+
+  }
+
+  .daftar {
+    padding: 5px 20px;
+    margin-right: 20px;
+  }
+
+  .login,
+  .daftar:hover {
+    cursor: pointer;
+    color: #fff;
+    border-radius: 50px;
+    background: linear-gradient(to right, #E7E035, #03AC0E);
+  }
+}
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 230px;
+  border: 2px solid #03AC0E;
+  border-left: none;
+  padding: 5px;
+  height: 36px;
+  border-radius: 0 5px 5px 0;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus {
+  color: #9DBFAF;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 2px solid #03AC0E;
+  background: #fff;
+  color: #03AC0E;
+  border-radius: 5px 0 0 5px;
+  border-right: none;
+  font-size: 20px;
+  padding-bottom: 3px;
+  margin-right: -3px;
+}
+
+// Style Footer
+.container-footer {
+  position: fixed;
+  bottom: 0px;
+  height: 35px;
+  margin: 0px 0px 10px 980px;
+  color: #000;
+  text-align: right;
+}
+
+// Syle Beranda
+.container-beranda {
+  margin-left: 30vw;
+  margin-bottom: 200px;
+  margin-top: 20vh;
+
+  .img-beranda img {
+    width: 400px;
+    height: 300px;
+    margin-right: 10px;
+  }
+
+  .content {
+    display: flex;
+
+    .description {
+      padding-top: 90px;
+      padding-right: 90px;
+      padding-left: 20px;
+    }
+  }
+
+  .button-belanja {
+    margin-top: 30px;
+  }
+
+  .button-belanja a {
+    position: relative;
+    padding: 15px 20px;
+  }
+
+  .button-belanja a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50px;
+    border: 7px solid transparent;
+    background: linear-gradient(to right, #E7E035, #03AC0E) border-box;
+    mask:
+      linear-gradient(#fff 0 0) padding-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+  }
+
+
+}
+
+// Style Produk
+.container-produk {
+  margin-left: 30vw;
+  margin-bottom: 100px;
+  margin-top: 20vh;
+
+  .grid {
+    display: flex;
+    margin-top: 50px;
+  }
+
+  .box-container {
+    padding-right: 5em;
+    padding-left: 20px;
+  }
+
+  .title-produk p {
+    font-size: 1.3em;
+  }
+
+  .box-produk {
+    display: flex;
+  }
+
+  .box-produk img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+  }
+
+  .lonjong {
+    margin-bottom: 20px;
+    margin-top: -20px;
+    border-radius: 10px;
+    width: 150px;
+    height: 15px;
+    background: linear-gradient(to right, #E7E035, #03AC0E);
+  }
+
+}
+
+// Style Layanan
+
+.container-layanan {
+  margin-left: 30vw;
+  margin-bottom: 100px;
+  margin-top: 20vh;
+  overflow: hidden;
+
+  ul {
+    margin-bottom: 15vh;
+    margin-top: 5vh;
+
+    li p {
+      font-size: 1.8em;
+    }
+
+  }
+
+  .diskon-view a {
+    position: relative;
+    padding: 15px 40px;
+    font-size: 4em;
+    padding-right: 20vw;
+    float: right;
+    margin: 0 -18vw 10vh 0;
+  }
+
+  .diskon-view a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 80px;
+    border: 20px solid transparent;
+    background: linear-gradient(to right, #E7E035, #03AC0E) border-box;
+    mask:
+      linear-gradient(#fff 0 0) padding-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+  }
+
+}
+
+// Style Contact
+.container-contact {
+  margin-left: 30vw;
+  padding-bottom: 20vh;
+  margin-top: 20vh;
+  overflow: hidden;
+
+  h1 {
+    font-size: 3em;
+  }
+
+  .flex-contact {
+    display: flex;
+    margin-top: 6vh;
+  }
+
+  form {
+    margin-right: 20vw;
+
+    .input-form {
+      display: flex;
+      margin-bottom: 5vh;
+    }
+
+    .input-form input {
+      width: 30vw;
+      border: 3px solid #03AC0E;
+      border-left: none;
+      padding: 5px;
+      height: 50px;
+      border-radius: 0px 5px 5px 0px;
+      outline: none;
+      color: #9DBFAF;
+    }
+
+    .input-form input::placeholder {
+      font-style: italic;
+      font-weight: bold;
+      color: #9DBFAF;
+    }
+
+    .icon-form {
+      padding-top: 6px;
+      width: 40px;
+      height: 50px;
+      border: 3px solid #03AC0E;
+      background: #fff;
+      text-align: center;
+      color: #03AC0E;
+      border-radius: 5px 0 0 5px;
+      border-right: none;
+      font-size: 20px;
+      margin-right: -3px;
+    }
+
+    textarea {
+      width: 33vw;
+      border: 3px solid #03AC0E;
+      padding: 7px;
+      padding-left: 40px;
+      height: 50px;
+      border-radius: 5px;
+      outline: none;
+      color: #9DBFAF;
+    }
+
+    textarea::placeholder {
+      font-style: italic;
+      font-weight: bold;
+      color: #9DBFAF;
+    }
+
+  }
+
+  .button-pesan {
+    margin-top: 30px;
+  }
+
+  .button-pesan a {
+    position: relative;
+    padding: 13px 50px;
+  }
+
+  .button-pesan a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50px;
+    border: 7px solid transparent;
+    background: linear-gradient(to right, #E7E035, #03AC0E) border-box;
+    mask:
+      linear-gradient(#fff 0 0) padding-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+  }
+
+  .box-medsos {
+    display: flex;
+    margin-bottom: 5vh;
+
+    i {
+      margin-right: 20px;
+    }
+  }
+
+}
+
+// Style Login
+
+.container-login {
+  margin: 15vh 20vw;
+  border: 3px solid #03AC0E;
+  background-color: #CCFFBA;
+  text-align: center;
+  border-radius: 10px;
+
+  h1 {
+    margin: 10px 20px;
+    color: #03AC0E;
+  }
+
+  h3 {
+    margin-bottom: 20px;
+    color: #7CE856;
+  }
+
+  form {
+    position: relative;
+
+  }
+
+  .input-form {
+    display: flex;
+    margin-bottom: 5vh;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .input-form input {
+    width: 30vw;
+    border: 3px solid #03AC0E;
+    border-left: none;
+    padding: 5px;
+    height: 50px;
+    border-radius: 0px 5px 5px 0px;
+    outline: none;
+    color: #9DBFAF;
+  }
+
+  .input-form input::placeholder {
+    font-style: italic;
+    font-weight: bold;
+    color: #9DBFAF;
+  }
+
+  .icon-form {
+    padding-top: 6px;
+    width: 40px;
+    height: 50px;
+    border: 3px solid #03AC0E;
+    background: #fff;
+    text-align: center;
+    color: #03AC0E;
+    border-radius: 5px 0 0 5px;
+    border-right: none;
+    font-size: 20px;
+    margin-right: -3px;
+  }
+
+  .forgot {
+    margin-top: -10px;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #03AC0E;
+  }
+
+  .login {
+    padding: 5px 20px;
+    width: 10vw;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 50px;
+    background: linear-gradient(to right, #E7E035, #03AC0E);
+    margin: 10px auto;
+
+    a{
+      font-size: 1.3em;
+    }
+  }
+
+  .flex-lupa {
+    display: flex;
+
+    .line1 {
+      width: 10vw;
+      height: 7px;
+      background-color: #9DBFAF;
+      margin: auto;
+      margin-right: -10vw;
+    }
+
+    .line2 {
+      width: 10vw;
+      height: 7px;
+      background-color: #9DBFAF;
+      margin: auto;
+      margin-left: -10vw;
+    }
+
+    p {
+      margin: auto;
+      font-weight: bold;
+      color: #9DBFAF;
+    }
+  }
+
+  .opsi-login {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2vh;
+
+    .medsos{
+      margin: 10px 30px;  
+    }
+
+
+  }
+
+}
+
+// Style Signup
+
+.container-signup {
+  margin: 15vh 20vw;
+  border: 3px solid #03AC0E;
+  background-color: #CCFFBA;
+  text-align: center;
+  border-radius: 10px;
+
+  h1 {
+    margin: 10px 20px;
+    color: #03AC0E;
+  }
+
+  h3 {
+    margin-bottom: 20px;
+    color: #7CE856;
+  }
+
+  form {
+    position: relative;
+
+  }
+
+  .input-sign {
+    display: flex;
+    margin-bottom: 2vh;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .input-sign input {
+    width: 30vw;
+    border: 3px solid #03AC0E;
+    border-left: none;
+    padding: 5px;
+    height: 50px;
+    border-radius: 0px 5px 5px 0px;
+    outline: none;
+    color: #9DBFAF;
+  }
+
+  .input-sign input::placeholder {
+    font-style: italic;
+    font-weight: bold;
+    color: #9dbfaf;
+  }
+
+  .icon-sign {
+    padding-top: 6px;
+    width: 40px;
+    height: 50px;
+    border: 3px solid #03AC0E;
+    background: #fff;
+    text-align: center;
+    color: #03AC0E;
+    border-radius: 5px 0 0 5px;
+    border-right: none;
+    font-size: 20px;
+    margin-right: -3px;
+  }
+
+  .forgot {
+    margin-top: -10px;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #03AC0E;
+  }
+
+  .login {
+    padding: 5px 20px;
+    width: 10vw;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 50px;
+    background: linear-gradient(to right, #E7E035, #03AC0E);
+    margin: -10px auto 10px auto;
+
+    a{
+      font-size: 1.3em;
+    }
+  }
+
+  .flex-lupa {
+    display: flex;
+
+    .line1 {
+      width: 10vw;
+      height: 7px;
+      background-color: #9DBFAF;
+      margin: auto;
+      margin-right: -10vw;
+    }
+
+    .line2 {
+      width: 10vw;
+      height: 7px;
+      background-color: #9DBFAF;
+      margin: auto;
+      margin-left: -10vw;
+    }
+
+    p {
+      margin: auto;
+      font-weight: bold;
+      color: #9DBFAF;
+    }
+  }
+
+  .opsi-login {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2vh;
+
+    .medsos{
+      margin: 10px 30px;  
+    }
+
+  }
+
+}
